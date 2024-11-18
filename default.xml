@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="xilinx"    fetch="https://github.com/Xilinx"/>
+    <remote name="yocto"     fetch="git://git.yoctoproject.org"/>
+    <remote name="oe"        fetch="git://git.openembedded.org"/>
+    <remote name="lesterlo"  fetch="https://github.com/lesterlo"/>
+    <remote name="openAMP"   fetch="https://github.com/OpenAMP/"/>
+
+    <default sync-j="4"/>
+
+    <!-- Source layer-->
+    <project remote="yocto"     revision="scarthgap"    name="poky"                path="source-layers/poky"/>
+    <project remote="oe"        revision="scarthgap"    name="meta-openembedded"   path="source-layers/meta-openembedded"/>
+ 
+    <project remote="xilinx"    revision="scarthgap"    name="meta-xilinx"         path="source-layers/meta-xilinx"/>
+    <project remote="xilinx"    revision="scarthgap"    name="meta-xilinx-tools"   path="source-layers/meta-xilinx-tools"/>
+
+    <project remote="openAMP"   revision="scarthgap"   name="meta-openamp"        path="source-layers/meta-openamp"/>
+    <!-- Your layer-->
+    <project remote="lesterlo"  revision="main"        name="meta-zuboard"         path="custom-layers/meta-zuboard"/>
+    
+
+</manifest>
