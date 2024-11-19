@@ -8,6 +8,11 @@
 
     <default sync-j="4"/>
 
+    <!-- script con -->
+    <project remote="lesterlo"  revision="main"         name="mncux-zynq-scripts"  path="source-layers/mncux-zynq-scripts">
+       <copyfile dest="setupSDK" src="setupSDK"/>
+    </project>
+
     <!-- Source layer-->
     <project remote="yocto"     revision="scarthgap"    name="poky"                path="source-layers/poky"/>
     <project remote="oe"        revision="scarthgap"    name="meta-openembedded"   path="source-layers/meta-openembedded"/>
@@ -15,7 +20,7 @@
     <project remote="xilinx"    revision="scarthgap"    name="meta-xilinx"         path="source-layers/meta-xilinx"/>
     <project remote="xilinx"    revision="scarthgap"    name="meta-xilinx-tools"   path="source-layers/meta-xilinx-tools"/>
 
-    <project remote="openAMP"   revision="scarthgap"   name="meta-openamp"        path="source-layers/meta-openamp"/>
+    <project remote="openAMP"   revision="scarthgap"   name="meta-openamp"         path="source-layers/meta-openamp"/>
     <!-- Your layer-->
     <project remote="lesterlo"  revision="main"        name="meta-zuboard"         path="custom-layers/meta-zuboard"/>
     
