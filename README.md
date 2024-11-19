@@ -1,8 +1,11 @@
-# Xilinx Yocto Template
+# Monutchee Linux (MNCux) Project template
 
 > [!WARNING]  
 > This repo is still in construction.
 
+# Introduction
+
+This is a project template for building yocto on xilinx ZYNQ devices.
 
 # Prerequisites
 
@@ -22,9 +25,12 @@ sudo locale-gen en_US.UTF-8
 mkdir <your folder name>
 cd <your folder name>
 # Fetch the manifest and checkout the target release version
-repo init -u https://github.com/lesterlo/xilinx-yocto-template.git -b main
+repo init -u https://github.com/lesterlo/mncux-manifest.git -b main
 # Fetch all the source from the repositories in the manifest
 repo sync
 # OPTIONAL: Create a development branch on each repo
 repo start <Your-Branch-Name> --all
 ```
+
+# Reference
+[Xilinx yocto-manifests](https://github.com/Xilinx/yocto-manifests)
