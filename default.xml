@@ -11,10 +11,6 @@
     <!-- script con -->
     <project remote="lesterlo"  revision="main"         name="mncux-scripts"  path="sources/mncux-scripts">
         <copyfile dest="setupSDK" src="setupSDK"/>
-        <copyfile dest=".devcontainer/base.Dockerfile" src="scripts/vscode_script/.devcontainer/base.Dockerfile"/>
-        <copyfile dest=".devcontainer/devcontainer.json" src="scripts/vscode_script/.devcontainer/devcontainer.json"/>
-        <copyfile dest=".devcontainer/install_lib.sh" src="scripts/vscode_script/.devcontainer/install_lib.sh"/>
-        <copyfile dest=".devcontainer/setup_env.sh" src="scripts/vscode_script/.devcontainer/setup_env.sh"/>
     </project>
 
     <!-- Poky main yocto layer -->
