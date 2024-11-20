@@ -11,6 +11,7 @@
     <!-- script con -->
     <project remote="lesterlo"  revision="main"         name="mncux-scripts"  path="sources/mncux-scripts">
        <copyfile dest="setupSDK" src="setupSDK"/>
+       <copyfile dest=".devconatiner" src="scripts/vscode_script/.devconatiner"/>
     </project>
 
     <!-- Poky main yocto layer -->
