@@ -10,8 +10,11 @@
 
     <!-- script con -->
     <project remote="lesterlo"  revision="main"         name="mncux-scripts"  path="sources/mncux-scripts">
-       <copyfile dest="setupSDK" src="setupSDK"/>
-       <copyfile dest=".devconatiner" src="scripts/vscode_script/.devconatiner"/>
+        <copyfile dest="setupSDK" src="setupSDK"/>
+        <copyfile dest=".devconatiner/base.Dockerfile" src="scripts/vscode_script/.devconatiner/base.Dockerfile"/>
+        <copyfile dest=".devconatiner/devcontainer.json" src="scripts/vscode_script/.devconatiner/devcontainer.json"/>
+        <copyfile dest=".devconatiner/install_lib.sh" src="scripts/vscode_script/.devconatiner/install_lib.sh"/>
+        <copyfile dest=".devconatiner/setup_env.sh" src="scripts/vscode_script/.devconatiner/setup_env.sh"/>
     </project>
 
     <!-- Poky main yocto layer -->
