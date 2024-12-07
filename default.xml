@@ -9,7 +9,7 @@
     <default sync-j="4"/>
 
     <!-- script con -->
-    <project remote="lesterlo"  revision="main"         name="mncux-scripts"  path="sources/mncux-scripts">
+    <project remote="lesterlo"  revision="main"         name="mncos-scripts"  path="sources/mncos-scripts">
         <copyfile dest="setupSDK" src="setupSDK"/>
     </project>
 
@@ -24,7 +24,7 @@
 
 
     <!-- Distro Layer -->
-    <project remote="lesterlo"  revision="main"         name="meta-mncux"          path="sources/meta-mncux"/>
+    <project remote="lesterlo"  revision="main"         name="meta-mncos"          path="sources/meta-mncos"/>
 
     <!-- Machine Layer -->
     <project remote="lesterlo"  revision="main"         name="meta-zuboard"        path="sources/meta-zuboard"/>
