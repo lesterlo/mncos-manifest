@@ -18,6 +18,7 @@
 
     <!-- Library layer-->
     <project remote="yocto"     revision="scarthgap"    name="meta-arm"            path="sources/meta-arm"/>
+    <project remote="yocto"     revision="scarthgap"    name="meta-virtualization" path="sources/meta-virtualization"/>
     <project remote="oe"        revision="scarthgap"    name="meta-openembedded"   path="sources/meta-openembedded"/>
     <project remote="xilinx"    revision="rel-v2024.2"  name="meta-xilinx"         path="sources/meta-xilinx"/>
     <project remote="xilinx"    revision="rel-v2024.2"  name="meta-xilinx-tools"   path="sources/meta-xilinx-tools"/>
