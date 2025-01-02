@@ -22,7 +22,7 @@
     <project remote="oe"        revision="scarthgap"    name="meta-openembedded"   path="sources/meta-openembedded"/>
     <project remote="xilinx"    revision="rel-v2024.2"  name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
     <project remote="xilinx"    revision="rel-v2024.2"  name="meta-xilinx-tools"   path="sources/meta-xilinx-tools"/>
-    <project remote="openAMP"   revision="rel-v2024.2"  name="meta-openamp"        path="sources/meta-openamp"/>
+    <project remote="xilinx"   revision="rel-v2024.2"  name="meta-openamp"        path="sources/meta-openamp"/>
 
 
     <!-- Distro Layer -->
