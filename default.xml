@@ -9,7 +9,7 @@
     <default sync-j="4"/>
 
     <!-- script con -->
-    <project remote="lesterlo"  revision="SDTgen"         name="mncos-scripts"  path="sources/mncos-scripts">
+    <project remote="lesterlo"  revision="main"         name="mncos-scripts"  path="sources/mncos-scripts">
         <copyfile dest="setupSDK" src="setupSDK"/>
     </project>
 
@@ -25,10 +25,10 @@
 
 
     <!-- Distro Layer -->
-    <project remote="lesterlo"  revision="SDTgen"         name="meta-mncos"          path="sources/meta-mncos"/>
+    <project remote="lesterlo"  revision="main"         name="meta-mncos"          path="sources/meta-mncos"/>
 
     <!-- Machine Layer -->
-    <project remote="lesterlo"  revision="SDTgen"         name="meta-zuboard"        path="sources/meta-zuboard"/>
+    <project remote="lesterlo"  revision="main"         name="meta-zuboard"        path="sources/meta-zuboard"/>
     
 
 </manifest>
