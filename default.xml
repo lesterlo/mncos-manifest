@@ -10,7 +10,7 @@
 
     <!-- script con -->
     <project remote="lesterlo"  revision="main"         name="mncos-scripts"  path="sources/mncos-scripts">
-        <linkfile dest="setupSDK" src="setupSDK"/>
+        <copyfile dest="setupSDK" src="setupSDK"/>
     </project>
 
     <!-- Poky main yocto layer -->
