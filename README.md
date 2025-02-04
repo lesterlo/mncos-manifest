@@ -5,21 +5,21 @@
 
 # Introduction
 
-This is a project template for building yocto on xilinx ZYNQ devices.
+This is a project template for building yocto on Xilinx ZYNQ devices.
 
-# Prerequisites
+| Name             | Description                                               | Link                                                 |
+|------------------|-----------------------------------------------------------|------------------------------------------------------|
+| meta-mncos       | A yocto distro layer of the project                       | [Link](https://github.com/lesterlo/meta-mncos)       |
+| meta-manifest    | Initialize the yocto building enviroment using repo tools | [Link](https://github.com/lesterlo/mncos-manifest)   |
+| mncos-scripts    | A helper repo to setup the yocto environment              | [Link](https://github.com/lesterlo/mncos-scripts)    |
+| meta-zuboard     | A yocto hardware layer for Avnet ZUBoard                  | [Link](https://github.com/lesterlo/meta-zuboard)     |
+| Vivado-Template  | Build the Vivado project for Programmable logic (PL)      | [Link](https://github.com/lesterlo/Vivado-Template)  |
 
-```bash
-# Ubuntu 22.04
-sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpath socat cpio python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping python3-git python3-jinja2 python3-subunit zstd liblz4-tool file locales libacl1 libtinfo5 repo 
 
-# Ubuntu 24.04
-# Change libtinfo5 to libtinfo6
+# Build guide
+For a more detail build guide, please visit the [MNCos Wiki](https://github.com/lesterlo/mncos-manifest/wiki)
 
-sudo locale-gen en_US.UTF-8
-```
-
-# Initialze you project
+# Initialze the project
 
 ```bash
 mkdir <your folder name>
