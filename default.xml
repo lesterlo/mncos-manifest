@@ -14,7 +14,7 @@
     </project>
 
     <!-- Poky main yocto layer -->
-    <project remote="yocto"     revision="refs/tags/yocto-5.0.6"    name="poky"                path="sources/poky"/>
+    <project remote="yocto"     revision="refs/tags/yocto-5.0.8"    name="poky"                path="sources/poky"/>
 
     <!-- Library layer-->
     <project remote="yocto"     revision="refs/tags/yocto-5.0.1"    name="meta-arm"            path="sources/meta-arm"/>
