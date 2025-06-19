@@ -17,11 +17,11 @@
     <project remote="yocto"     revision="refs/tags/yocto-5.0.8"    name="poky"                path="sources/poky"/>
 
     <!-- Library layer-->
-    <project remote="yocto"     revision="refs/tags/yocto-5.0.1"    name="meta-arm"            path="sources/meta-arm"/>
-    <project remote="yocto"     revision="scarthgap"    name="meta-virtualization" path="sources/meta-virtualization"/>
-    <project remote="oe"        revision="scarthgap"    name="meta-openembedded"   path="sources/meta-openembedded"/>
-    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2024.2"  name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
-    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2024.2"  name="meta-openamp"        path="sources/meta-openamp"/>
+    <project remote="yocto"     revision="refs/tags/yocto-5.0.2"                        name="meta-arm"            path="sources/meta-arm"/>
+    <project remote="yocto"     revision="9e040ee8dd6025558ea60ac9db60c41bfeddf221"     name="meta-virtualization" path="sources/meta-virtualization"/>
+    <project remote="oe"        revision="491671faee11ea131feab5a3a451d1a01deb2ab1"     name="meta-openembedded"   path="sources/meta-openembedded"/>
+    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.1"                   name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
+    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.1"                   name="meta-openamp"        path="sources/meta-openamp"/>
 
 
     <!-- Distro Layer -->

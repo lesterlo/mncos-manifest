@@ -23,7 +23,7 @@ For a more detailed build guide, please visit the [MNCos Wiki](https://github.co
 mkdir <your folder name>
 cd <your folder name>
 # Fetch the manifest and checkout the target release version
-repo init -u https://github.com/lesterlo/mncos-manifest.git -b main
+repo init -u https://github.com/lesterlo/mncos-manifest.git -b <branch name> [ -m <release manifest>]
 # Fetch all the source from the repositories in the manifest
 repo sync
 
