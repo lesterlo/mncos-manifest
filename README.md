@@ -32,7 +32,13 @@ repo sync
 repo start <Your-Branch-Name> --all
 
 # OPTIONAL: Set our repositories in branch HEAD rather than detected
-repo forall <branch_names> -c 'git switch main'
+repo forall -p meta-zuboard meta-mncos mncos-sciprts -c 'git switch main'
+
+# OPTIONAL: Set our repositories in branch HEAD rather than detected
+repo forall -p meta-zuboard meta-mncos mncos-sciprts -c 'git switch main'
+
+# Set to my email
+repo forall -p meta-zuboard meta-mncos mncos-sciprts -c 'git config user.email 21245380+lesterlo@users.noreply.github.com'
 ```
 
 # Reference
