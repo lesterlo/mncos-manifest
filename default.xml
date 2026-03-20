@@ -14,12 +14,12 @@
     </project>
 
     <!-- Poky main yocto layer -->
-    <project remote="yocto"     revision="refs/tags/yocto-5.0.13"    name="poky"                path="sources/poky"/>
+    <project remote="yocto"     revision="refs/tags/yocto-5.0.16"    name="poky"                path="sources/poky"/>
 
     <!-- Library layer-->
-    <project remote="yocto"     revision="refs/tags/yocto-5.0.2"                        name="meta-arm"            path="sources/meta-arm"/>
-    <project remote="yocto"     revision="d75faad37ae3cbbfe31dffaa6432553fc5450838"     name="meta-virtualization" path="sources/meta-virtualization"/>
-    <project remote="oe"        revision="89a01c3d9ad1f8fce6aeb4dd0e694cfa28d42099"     name="meta-openembedded"   path="sources/meta-openembedded"/>
+    <project remote="yocto"     revision="refs/tags/yocto-5.0.3"                        name="meta-arm"            path="sources/meta-arm"/>
+    <project remote="yocto"     revision="3dd635f613f7299d986a8ab6bc9f584370f8ed1d"     name="meta-virtualization" path="sources/meta-virtualization"/>
+    <project remote="oe"        revision="4d3e2639dec542b58708244662d5ce36810fc510"     name="meta-openembedded"   path="sources/meta-openembedded"/>
     <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
     <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-openamp"        path="sources/meta-openamp"/>
 
