@@ -168,8 +168,6 @@ clone_or_checkout_main() {
         printf 'Cloning %s...\n' "${project_name}"
 
         if git clone \
-            --branch main \
-            --single-branch \
             "${repo_url}" \
             "${destination}"; then
 
