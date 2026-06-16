@@ -9,12 +9,11 @@ set -Eeuo pipefail
 # Override it with:
 #   ./setupWorkspace --workspace /path/to/ZuBoardDemo all
 
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
 WORKSPACE_ROOT="${PWD}"
 
+MANIFEST_REPO_URL="${MANIFEST_REPO_URL:-https://github.com/lesterlo/mncos-manifest.git}"
 MANIFEST_BRANCH="${MANIFEST_BRANCH:-main}"
 MANIFEST_FILE="${MANIFEST_FILE:-zudemo/zudemo.xml}"
-MANIFEST_REPO_URL="${MANIFEST_REPO_URL:-}"
 
 APU_REPO_URL="${APU_REPO_URL:-git@github.com:lesterlo/ZuBoardDemo_APU.git}"
 RPU_REPO_URL="${RPU_REPO_URL:-git@github.com:lesterlo/ZuBoardDemo_RPU.git}"
