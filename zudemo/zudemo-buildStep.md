@@ -8,6 +8,23 @@ The following command will download and initialze a the workspace for you
 curl -fsSL "https://raw.githubusercontent.com/lesterlo/mncos-manifest/main/zudemo/zudemo-setupWorkspace" | bash -s -- all
 ```
 
+# VS Code initialization
+
+Add the following lines to `.vscode/settings.json` to prevent to many yocto files generate crash the vscode
+
+```
+    "files.exclude": {
+        "yocto-build/build/**": false
+    },
+    "search.exclude": {
+        "yocto-build/build/**": true
+    },
+    "files.watcherExclude": {
+        "**/yocto-build/build/**": true
+    },
+    "C_Cpp.files.exclude": {
+    "**/yocto-build/build/**": true
+```
 
 
 # Build Steps
