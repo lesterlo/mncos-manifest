@@ -1,21 +1,15 @@
-# Monutchee OS (MNCos) Project template
+# Monutchee OS (MNCos) Project collection
 
 
 # Introduction
 
-This is a project template for building yocto on Xilinx ZYNQ devices.
+This is a project collection for building yocto on Xilinx ZYNQ devices.
 
-| Name                   | Description                                               | Link                                                 |
-|------------------------|-----------------------------------------------------------|------------------------------------------------------|
-| meta-manifest (This)   | Initialize the yocto building enviroment using repo tools | [Link](https://github.com/lesterlo/mncos-manifest)   |
-| meta-mncos             | A yocto distro layer of the project                       | [Link](https://github.com/lesterlo/meta-mncos)       |
-| mncos-scripts          | A helper repo to setup the yocto environment              | [Link](https://github.com/lesterlo/mncos-scripts)    |
-| meta-zuboard           | A yocto hardware layer for Avnet ZUBoard                  | [Link](https://github.com/lesterlo/meta-zuboard)     |
-| Vivado-Template        | Build the Vivado project for Programmable logic (PL)      | [Link](https://github.com/lesterlo/Vivado-Template)  |
-
+Please refer to [Repo Wiki](https://github.com/lesterlo/mncos-manifest/wiki) 
+to find out more.
 
 # Build guide
-For a more detailed build guide, please visit the [MNCos Wiki](https://github.com/lesterlo/mncos-manifest/wiki)
+For a more detailed build guide, please visit the [Repo Wiki](https://github.com/lesterlo/mncos-manifest/wiki)
 
 # Initialze the project
 
