@@ -38,7 +38,7 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
 ## Yocto
 
 
-
+### Build step
 1. load and prepare the yocto buuild environment
 
     ```bash
@@ -71,3 +71,12 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
     ```
 
 Please refer to [Wiki](https://github.com/lesterlo/mncos-manifest/wiki/04.-Build-the-yocto-image) for main reference.
+
+### Advance configuration
+
+To config the yocto use the local compiled binary, insert the following line to `conf/local.conf`
+```bash
+APU_RPU_CTL_SRC = "local"
+ZUBOARD_FIRMWARE_SRC = "local"
+APU_RPU_CTL_GIT_BRANCH = "main"
+```
