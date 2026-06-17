@@ -8,27 +8,21 @@
 
     <default sync-j="4"/>
 
-    <!-- script con -->
-    <project remote="lesterlo"  revision="main"         name="mncos-scripts"  path="sources/mncos-scripts">
-        <linkfile dest="setupSDK" src="setupSDK"/>
+    <!-- Vendor -->
+    <project remote="lesterlo"  revision="main"                                         name="meta-monutchee"      path="sources/meta-monutchee" sync-s="true">
+        <linkfile dest="setupSDK" src="yocto-script/setupSDK"/>
     </project>
 
-    <!-- Poky main yocto layer -->
+
+    <!-- Main Poky yocto layer -->
     <project remote="yocto"     revision="refs/tags/yocto-5.0.18"    name="poky"                path="sources/poky"/>
 
-    <!-- Library layer-->
+    <!-- Yocto Library layer-->
     <project remote="yocto"     revision="c4fd56386ee30f8b46f8e4eb1220edaf510d2ac0"     name="meta-arm"            path="sources/meta-arm"/>
     <project remote="yocto"     revision="9d0007a369deb4a6346f5ab7a9e6d432a8ed14fe"     name="meta-virtualization" path="sources/meta-virtualization"/>
     <project remote="oe"        revision="d8cc4e44001c7257273d290ce8c4496e93d32841"     name="meta-openembedded"   path="sources/meta-openembedded"/>
     <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
     <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-openamp"        path="sources/meta-openamp"/>
 
-
-    <!-- Distro Layer -->
-    <project remote="lesterlo"  revision="main"         name="meta-mncos"          path="sources/meta-mncos"/>
-
-    <!-- Machine Layer -->
-    <project remote="lesterlo"  revision="main"         name="meta-zuboard"        path="sources/meta-zuboard"/>
-    
 
 </manifest>

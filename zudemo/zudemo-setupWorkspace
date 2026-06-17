@@ -3,7 +3,7 @@
 set -Eeuo pipefail
 
 # setupWorkspace is stored in:
-#   mncos-manifest/zudemo/setupWorkspace
+#   monutchee-manifest/zudemo/setupWorkspace
 #
 # The workspace defaults to the directory from which this script is run.
 # Override it with:
@@ -11,7 +11,7 @@ set -Eeuo pipefail
 
 WORKSPACE_ROOT="${PWD}"
 
-MANIFEST_REPO_URL="${MANIFEST_REPO_URL:-https://github.com/lesterlo/mncos-manifest.git}"
+MANIFEST_REPO_URL="${MANIFEST_REPO_URL:-https://github.com/lesterlo/monutchee-manifest.git}"
 MANIFEST_BRANCH="${MANIFEST_BRANCH:-main}"
 MANIFEST_FILE="${MANIFEST_FILE:-zudemo/zudemo.xml}"
 
@@ -145,7 +145,7 @@ resolve_manifest_repo_url() {
     fi
 
     if [[ -z "${MANIFEST_REPO_URL}" ]]; then
-        MANIFEST_REPO_URL="https://github.com/lesterlo/mncos-manifest.git"
+        MANIFEST_REPO_URL="https://github.com/lesterlo/monutchee-manifest.git"
     fi
 }
 
@@ -197,12 +197,12 @@ clone_or_checkout_main() {
     if git -C "${destination}" show-ref \
         --verify --quiet refs/heads/main; then
 
-        git -C "${destination}" switch main
+        git -C "${destination}" switch main || return 1
 
     elif git -C "${destination}" show-ref \
         --verify --quiet refs/remotes/origin/main; then
 
-        git -C "${destination}" switch --track origin/main
+        git -C "${destination}" switch --track origin/main || return 1
 
     else
         printf 'Error: %s has no local main or origin/main branch.\n' \
@@ -245,10 +245,11 @@ setup_yocto() {
         repo init \
             -u "${MANIFEST_REPO_URL}" \
             -b "${MANIFEST_BRANCH}" \
-            -m "${MANIFEST_FILE}"
+            -m "${MANIFEST_FILE}" \
+            || exit 1
 
-        repo sync
-    )
+        repo sync || exit 1
+    ) || return 1
 
     printf 'Yocto workspace synchronized successfully.\n'
 }

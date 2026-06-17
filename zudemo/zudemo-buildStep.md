@@ -5,7 +5,7 @@
 The following command will download and initialze a the workspace for you
 
 ```bash
-curl -fsSL "https://raw.githubusercontent.com/lesterlo/mncos-manifest/main/zudemo/zudemo-setupWorkspace" | bash -s -- all
+curl -fsSL "https://raw.githubusercontent.com/lesterlo/monutchee-manifest/main/zudemo/zudemo-setupWorkspace" | bash -s -- all
 ```
 
 # VS Code initialization
@@ -70,7 +70,7 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
     bitbake mncos-image-minimal
     ```
 
-Please refer to [Wiki](https://github.com/lesterlo/mncos-manifest/wiki/04.-Build-the-yocto-image) for main reference.
+Please refer to [Wiki](https://github.com/lesterlo/monutchee-manifest/wiki/04.-Build-the-yocto-image) for main reference.
 
 ### Advance configuration
 
