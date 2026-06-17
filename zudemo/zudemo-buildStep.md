@@ -55,7 +55,7 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
          -g full --machine-name "zudemo" \
          --add-config CONFIG_YOCTO_BBMC_CORTEXR5_0_FREERTOS=y \
          --add-config CONFIG_YOCTO_BBMC_CORTEXR5_1_FREERTOS=y \
-         --domain-file ../sources/meta-zuboard/recipes-bsp/domainyaml/openamp-overlay-zynqmp.yaml
+         --domain-file ../sources/meta-monutchee/meta-zuboard/recipes-bsp/domainyaml/openamp-overlay-zynqmp.yaml
     ```
 1. After the machine config generate
     
