@@ -23,7 +23,8 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
         "**/yocto-build/build/**": true
     },
     "C_Cpp.files.exclude": {
-    "**/yocto-build/build/**": true
+        "**/yocto-build/build/**": true
+    }
 ```
 
 
