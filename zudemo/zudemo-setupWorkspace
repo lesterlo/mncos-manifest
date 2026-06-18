@@ -15,6 +15,10 @@ MANIFEST_REPO_URL="${MANIFEST_REPO_URL:-https://github.com/lesterlo/monutchee-ma
 MANIFEST_BRANCH="${MANIFEST_BRANCH:-main}"
 MANIFEST_FILE="${MANIFEST_FILE:-zudemo/zudemo.xml}"
 
+# Product identity for this workspace. Recorded into yocto-build/.mncos-product
+# so `source ./setupSDK` needs no --product argument in any new console.
+MONUTCHEE_PRODUCT="${MONUTCHEE_PRODUCT:-zudemo}"
+
 APU_REPO_URL="${APU_REPO_URL:-git@github.com:lesterlo/ZuBoardDemo_APU.git}"
 RPU_REPO_URL="${RPU_REPO_URL:-git@github.com:lesterlo/ZuBoardDemo_RPU.git}"
 PL_REPO_URL="${PL_REPO_URL:-git@github.com:lesterlo/ZuBoardDemo_PL.git}"
@@ -341,6 +345,11 @@ setup_yocto() {
 
         repo sync || exit 1
     ) || return 1
+
+    # Record the product so `source ./setupSDK` works with no argument.
+    printf '%s\n' "${MONUTCHEE_PRODUCT}" > "${yocto_dir}/.mncos-product"
+    printf 'Recorded product marker: %s (%s)\n' \
+        "${MONUTCHEE_PRODUCT}" "${yocto_dir}/.mncos-product"
 
     printf 'Yocto workspace synchronized successfully.\n'
 }
