@@ -68,7 +68,7 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
 1. build the yocto image
 
     ```bash
-    bitbake mncos-image-minimal
+    bitbake zuboard-image-minimal
     ```
 
 Please refer to [Wiki](https://github.com/lesterlo/monutchee-manifest/wiki/04.-Build-the-yocto-image) for main reference.
