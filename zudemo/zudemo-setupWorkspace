@@ -5,11 +5,14 @@ set -Eeuo pipefail
 # Thin wrapper: delegates to common/setupWorkspace for the zudemo product.
 # All workspace-setup logic lives in common/setupWorkspace.
 
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
-SHARED_SETUP="${SCRIPT_DIR}/../common/setupWorkspace"
+SCRIPT_DIR=""
+if [[ -n "${BASH_SOURCE[0]:-}" && -f "${BASH_SOURCE[0]}" ]]; then
+    SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+    SHARED_SETUP="${SCRIPT_DIR}/../common/setupWorkspace"
 
-if [[ -f "${SHARED_SETUP}" ]]; then
-    exec bash "${SHARED_SETUP}" --product zudemo "$@"
+    if [[ -f "${SHARED_SETUP}" ]]; then
+        exec bash "${SHARED_SETUP}" --product zudemo "$@"
+    fi
 fi
 
 # Fallback: when run standalone (e.g. via curl | bash before the manifest is
