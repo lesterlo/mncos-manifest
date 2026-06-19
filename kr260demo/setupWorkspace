@@ -2,7 +2,10 @@
 
 set -Eeuo pipefail
 
-# Thin wrapper: delegates to common/setupWorkspace for the kr260demo product.
+
+PROJECT_NAME="kr260demo"
+
+# Thin wrapper: delegates to common/setupWorkspace
 # All workspace-setup logic lives in common/setupWorkspace.
 
 SCRIPT_DIR=""
@@ -11,7 +14,7 @@ if [[ -n "${BASH_SOURCE[0]:-}" && -f "${BASH_SOURCE[0]}" ]]; then
     SHARED_SETUP="${SCRIPT_DIR}/../common/setupWorkspace"
 
     if [[ -f "${SHARED_SETUP}" ]]; then
-        exec bash "${SHARED_SETUP}" --product zudemo "$@"
+        exec bash "${SHARED_SETUP}" --product "${PROJECT_NAME}" "$@"
     fi
 fi
 
@@ -25,4 +28,4 @@ if ! command -v curl >/dev/null 2>&1; then
     exit 1
 fi
 
-curl -fsSL "${RAW_SETUP_URL}" | bash -s -- --product kr260demo "$@"
+curl -fsSL "${RAW_SETUP_URL}" | bash -s -- --product "${PROJECT_NAME}" "$@"
