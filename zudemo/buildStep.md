@@ -32,6 +32,7 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
 
 ## PL
 
+
 ## APU
 
 ## RPU
@@ -45,6 +46,16 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
     ```bash
     cd yocto-build && source ./setupSDK
 
+    ```
+1. Generate the SDT output from `.xsa` file
+
+    ```bash
+    #Assume your are in yocto-build/build
+    echo 'set_dt_param \
+        -xsa ../../runtime-generated/bin_file/ZuBoardDemo_PL.xsa \
+        -include_dts ../sources/meta-monutchee/meta-zuboard/recipes-bsp/device-tree/files/zub1cg.dtsi \
+        -dir ../../runtime-generated/vivado_SDT_out/ ; \
+        generate_sdt ; exit' | sdtgen
     ```
 
 1. run gen-machineconf
