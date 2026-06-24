@@ -24,7 +24,19 @@ Add the following lines to `.vscode/settings.json` to prevent to many yocto file
     },
     "C_Cpp.files.exclude": {
         "**/yocto-build/build/**": true
-    }
+    },
+    "git.ignoredRepositories": [
+        "yocto-build/sources/meta-arm",
+        "yocto-build/sources/meta-kria",
+        "yocto-build/sources/meta-openamp",
+        "yocto-build/sources/meta-openembedded",
+        "yocto-build/sources/meta-virtualization",
+        "yocto-build/sources/meta-xilinx",
+        "yocto-build/sources/poky"
+    ],
+    "git.scanRepositories": [
+        "yocto-build/sources/meta-monutchee"
+    ]
 ```
 
 
