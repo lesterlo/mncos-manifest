@@ -21,8 +21,8 @@
     <project remote="yocto"     revision="c4fd56386ee30f8b46f8e4eb1220edaf510d2ac0"     name="meta-arm"            path="sources/meta-arm"/>
     <project remote="yocto"     revision="9d0007a369deb4a6346f5ab7a9e6d432a8ed14fe"     name="meta-virtualization" path="sources/meta-virtualization"/>
     <project remote="oe"        revision="d8cc4e44001c7257273d290ce8c4496e93d32841"     name="meta-openembedded"   path="sources/meta-openembedded"/>
-    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
-    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2025.2"                   name="meta-openamp"        path="sources/meta-openamp"/>
+    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2026.1"                   name="meta-xilinx"         path="sources/meta-xilinx" sync-s="true"/>
+    <project remote="xilinx"    revision="refs/tags/xlnx-rel-v2026.1"                   name="meta-openamp"        path="sources/meta-openamp"/>
 
 
 </manifest>
